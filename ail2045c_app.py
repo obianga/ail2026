@@ -101,9 +101,9 @@ st.markdown("""
     /* Sidebar text colors - CLEAN & READABLE */
     section[data-testid="stSidebar"] label {
         color: #e0e0e0 !important;
-        font-size: 0.95rem !important;
+        font-size: 0.85rem !important;
         font-weight: 500 !important;
-        margin-bottom: 8px !important;
+        margin-bottom: 5px !important;
     }
     section[data-testid="stSidebar"] .stMarkdown {
         color: white !important;
@@ -119,12 +119,12 @@ st.markdown("""
         font-size: 0.9rem !important;
     }
     
-    /* Sidebar sliders - CLEAN DESIGN */
+    /* Sidebar sliders - COMPACT DESIGN */
     section[data-testid="stSidebar"] .stSlider {
-        padding: 15px 10px;
+        padding: 10px 8px;
         background: rgba(255, 255, 255, 0.03);
-        border-radius: 12px;
-        margin: 12px 0;
+        border-radius: 10px;
+        margin: 8px 0;
         border: 1px solid rgba(247, 147, 26, 0.15);
         transition: all 0.3s ease;
     }
@@ -271,7 +271,7 @@ st.title("AIL-2045 Bitcoin & Crypto Finance Platform")
 st.markdown("### Test $4T industrial leap with BTC, Bond, FDI & NFT (2026-2045)")
 
 # Sidebar with enhanced styling
-st.sidebar.markdown("""<div style='background: linear-gradient(135deg, rgba(247,147,26,0.1) 0%, rgba(0,212,255,0.1) 100%); padding: 25px 20px; border-radius: 15px; border: 2px solid rgba(247,147,26,0.3); margin-bottom: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.3);'><h1 style='color: #F7931A; font-size: 32px; font-weight: bold; margin: 0; text-shadow: 0 0 10px rgba(247,147,26,0.5); letter-spacing: 0.5px; text-align: center;'>⚙️ Model Parameters</h1></div>""", unsafe_allow_html=True)
+st.sidebar.markdown("""<div style='background: linear-gradient(135deg, rgba(247,147,26,0.1) 0%, rgba(0,212,255,0.1) 100%); padding: 15px 12px; border-radius: 12px; border: 2px solid rgba(247,147,26,0.3); margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);'><h1 style='color: #F7931A; font-size: 22px; font-weight: bold; margin: 0; text-shadow: 0 0 8px rgba(247,147,26,0.4); letter-spacing: 0.5px; text-align: center;'>⚙️ Model Parameters</h1></div>""", unsafe_allow_html=True)
 btc_seed = st.sidebar.slider("BTC Seed ($B)", 5.0, 100.0, 35.0, 5.0)
 btc_cagr = st.sidebar.slider("BTC CAGR (%)", 1.0, 30.0, 15.0, 1.0) / 100
 years = st.sidebar.slider("Forecast Years", 5, 30, 19)
